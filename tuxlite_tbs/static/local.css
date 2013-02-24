@@ -37,6 +37,8 @@ h3 { margin-top: 2.5em; }
 .article a:hover { text-decoration: none; } 
 
 
+.recentcomments { font-size: 90%; }
+
 
 /* Styling for the "other entries" section */
 /* Metadata */
