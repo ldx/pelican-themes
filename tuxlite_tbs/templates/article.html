@@ -6,7 +6,20 @@
             {% include "metadata.html" %}
         </div>
 	
-        <div>{{ article.content }}</div>
+        <div id="fb-root"></div>
+
+        <div class="fb-like" data-send="true" data-width="450"
+            data-show-faces="false" data-font="arial"></div>
+
+        <div>
+            {{ article.content }}
+
+            <br />
+            <em>Ha tetszett, lájkolj minket
+            <a href="https://facebook.com/Emeljblog">Facebookon</a>, vagy
+            kövess <a href="https://twitter.com/emeljblog">Twitteren</a>
+            is!</em>
+        </div>
 	
         <hr>
     	   
