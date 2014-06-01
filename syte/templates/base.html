@@ -24,7 +24,9 @@
   {% include 'github.html' %}
   <hgroup>
     <div>
+      {% if GRAVATAR %}
       <img src="{{ GRAVATAR }}" style="margin-left: 34px; margin-top: 30px;">
+      {% endif %}
     </div>
     <h1><a href={{ SITEURL }} id="home-link">{{ SITENAME }}</a></h1>
     <h2>{{ ABOUT }}</h2>
