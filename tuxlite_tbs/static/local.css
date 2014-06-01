@@ -32,10 +32,12 @@ h3 { margin-top: 2.5em; }
 .table th, .table td { line-height: 1.3em; }
 
 /* Styling for articles */
-.article { padding-bottom:20px; padding-right: 40px; }
+.article { text-align:justify; padding-bottom:20px; padding-right: 40px; }
 .content-title { margin-bottom: 30px; }
 .article a:hover { text-decoration: none; } 
 
+
+.recentcomments { font-size: 90%; }
 
 
 /* Styling for the "other entries" section */

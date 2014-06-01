@@ -22,6 +22,15 @@
 
 <body>
 
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/hu_HU/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
 <div class="navbar">
     <div class="navbar-inner">
     <div class="container">
@@ -131,6 +140,21 @@
                 {% endfor %}
             </ul>
             </div>
+            </div>
+            {% endif %}
+
+            {% if DISQUS_SITENAME %}
+            <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+                <ul class="nav nav-list">
+                    <li class="nav-header">
+                    Legutóbbi kommentek
+                    </li>
+                </ul>
+                <div class="recentcomments">
+                    <script type="text/javascript"
+                        src="http://emelj.disqus.com/recent_comments_widget.js?num_items=3&hide_avatars=0&avatar_size=24&excerpt_length=90">
+                    </script>
+                </div>
             </div>
             {% endif %}
 
